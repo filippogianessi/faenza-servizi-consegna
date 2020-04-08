@@ -46,3 +46,50 @@ h1 {
 .section--frutta-verdura {
   margin: 72px 120px 96px;
 }
+
+@media all and (min-device-width: 320px) and (max-device-width: 480px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  .section--frutta-verdura {
+    margin: 72px 20px 96px;
+  }
+  h1 {
+    font-size: 32px;
+    margin-bottom: 32px;
+    line-height: 40px;
+  }
+  .card__title {
+    font-size: 16px;
+    margin-bottom: 12px;
+    line-height: 20px;
+  }
+  .card__item {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .label {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media all and (min-device-width: 480px) and (max-device-width: 768px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+}
+
+@media all and (min-device-width: 768px) and (max-device-width: 1024px) {}
+
+@media all and (min-device-width: 1024px) and (max-device-width: 1440px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
