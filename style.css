@@ -47,6 +47,18 @@ h1 {
   color: #aaa;
 }
 
+.cta {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: #406AFF;
+  text-decoration: none;
+}
+
 .section--frutta-verdura {
   margin: 72px 120px 96px;
 }
