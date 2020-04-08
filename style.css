@@ -14,13 +14,13 @@ h1 {
 }
 .card__title {
   font-size: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   line-height: 24px;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
 }
 .card__item {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
