@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Frutta e verdura</title>
+    <script type="text/javascript" src="frutta-verdura.json"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <section class="section--frutta-verdura">
+      <h1>Frutta e verdura</h1>
+      <div id="list" class="cards"></div>
+    </section>
+
+
+  </body>
+
+  <script>
+
+
+
+
+
+
+
+    function CreateTableFromJSON() {
+
+        // EXTRACT VALUE FOR HTML HEADER.
+        // ('Book ID', 'Book Name', 'Category' and 'Price')
+        var col = [];
+        for (var i = 0; i < data.length; i++) {
+            for (var key in data[i]) {
+                if (col.indexOf(key) === -1) {
+                    col.push(key);
+                }
+            }
+        }
+
+        // CREATE DYNAMIC TABLE.
+        var table = document.createElement("table");
+
+        // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+
+        var tr = table.insertRow(-1);                   // TABLE ROW.
+
+        for (var i = 0; i < col.length; i++) {
+            var th = document.createElement("th");      // TABLE HEADER.
+            th.innerHTML = col[i];
+            tr.appendChild(th);
+        }
+
+        // ADD JSON DATA TO THE TABLE AS ROWS.
+        for (var i = 0; i < data.length; i++) {
+
+            tr = table.insertRow(-1);
+
+            for (var j = 0; j < col.length; j++) {
+                var tabCell = tr.insertCell(-1);
+                tabCell.innerHTML = data[i][col[j]];
+            }
+        }
+
+        // FINALLY ADD THE NEWLY CREATED TABLE WITH JSON DATA TO A CONTAINER.
+        var divContainer = document.getElementById("showData");
+        divContainer.innerHTML = "";
+        divContainer.appendChild(table);
+     }
+
+
+
+     document.addEventListener("DOMContentLoaded", function(event) {
+
+     var count = 0;
+
+     var printList = document.getElementById('list');
+
+     var htmlContent = '';
+
+     console.log(Object.keys(data).length);
+     console.log(data.lenght);
+
+     // for (count = 0 ;count < data.length; count++){
+     //
+     //     htmlContent += '<div class="card">' +
+     //                      '<div class="label">NOME</div>' +
+     //                      '<div class="paragraph">'+ data[count].Name +'</div>' +
+     //                    '</div>';
+     //
+     //       console.log(count);
+     //       console.log(data[count].Name);
+     //
+     // }
+
+    data.forEach(function(value){
+      htmlContent += '<div class="card">' +
+                       '<div class="card__title">'+ value.name +'</div>' +
+                       '<div class="label">CONTATTI</div>' +
+                       '<div class="card__item">'+ value.contacts +'</div>' +
+                       '<div class="label">PAGAMENTO</div>' +
+                       '<div class="card__item">'+ value.payment +'</div>' +
+                       '<div class="label">AREA DI CONSEGNA</div>' +
+                       '<div class="card__item">'+ value.area +'</div>' +
+                       '<div class="label">ALTRE INFO</div>' +
+                       '<div class="card__item">'+ value.otherInfo +'</div>' +
+                     '</div>';
+    });
+
+
+     printList.innerHTML = htmlContent;
+
+     });
+
+     console.log(data);
+
+     console.log(window);
+</script>
+</html>

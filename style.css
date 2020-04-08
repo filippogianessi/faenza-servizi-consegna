@@ -1,0 +1,48 @@
+h1 {
+  font-size: 40px;
+  margin-bottom: 32px;
+  line-height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.2px;
+}
+.card {
+  padding: 32px 28px;
+  box-shadow: 0px 2px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+
+}
+.card__title {
+  font-size: 20px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+.card__item {
+  margin-bottom: 8px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 32px;
+}
+
+.label {
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: #aaa;
+}
+
+.section--frutta-verdura {
+  margin: 72px 120px 96px;
+}

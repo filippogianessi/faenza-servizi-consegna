@@ -1,0 +1,578 @@
+var data = '[
+  {
+    "Name": "Agriturismo La Rinaldina Soc. Agr. Ligabue s.s.\nConfetture, succhi, olio, frutta e verdura",
+    "Contacts": "371 3977051 (Whatsapp)\ninfo@agriturismolarinaldina.it",
+    "Payment": "Contanti\nSatispay",
+    "Area": "Faenza e comuni limitrofi",
+    "Other-info": "Info:\nwww.agriturismolarinaldina.it/news",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Antichi Calanchi di Babini Daniela\nPasta e biscotti di grano Cappelli, salse di pomodoro",
+    "Contatti: telefono/email": "338 7012610\ninfo@antichicalanchi.it",
+    "Tipi di pagamento accettati": "Carte di credito",
+    "Ambito territoriale di consegna": "Faenza e comuni limitrofi",
+    "Altre informazioni": "Prodotti biologici.\nPasta di grano duro Senatore Capelli, biscotti di Senatore Capelli, salse di pomodoro.",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Apicoltura Faentina\nMiele e prodotti dell'alveare",
+    "Contatti: telefono/email": "349 5247824\napicolturafaentina@gmail.com (anche WHATSAPP)\nMESSENGER",
+    "Tipi di pagamento accettati": "Contanti\nBonifico\nSatispay",
+    "Ambito territoriale di consegna": "Faenza, Reda, Castel Bolognese, Lugo, Forlì",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Apicoltura Lombardi\nMiele",
+    "Contatti: telefono/email": "0546 47155\n345 8108108",
+    "Tipi di pagamento accettati": "",
+    "Ambito territoriale di consegna": "Faenza",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Apicoltura Ortolani\nMiele , polline, propoli e pappa reale",
+    "Contatti: telefono/email": "339 1453562 (Daniela)\nmieleortolani@gmail.com",
+    "Tipi di pagamento accettati": "Carte di credito",
+    "Ambito territoriale di consegna": "Faenza e comuni limitrofi",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Az. Agr. ANCARANI s.s.\nVino (Bag in Box e bottiglia) e pasta di grano \"Cappelli\".",
+    "Contatti: telefono/email": "333 8314188\ninfo@viniancarani.it\nwww.viniancarani.it",
+    "Tipi di pagamento accettati": "",
+    "Ambito territoriale di consegna": "Faenza",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Azienda agr. Andrea Savorani\nOrtofrutta, miele e uova",
+    "Contatti: telefono/email": "334 3031821",
+    "Tipi di pagamento accettati": "",
+    "Ambito territoriale di consegna": "Faenza e Comuni dell'Unione della Romagna Faentina",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Azienda Agr. Borgo dei Laghi di Laghi Aldo\nProduttore vini sfusi e in bottiglia, olio, farine di grani antichi e pasta secca, carciofo moretto e frutta di stagione",
+    "Contatti: telefono/email": "335 7063288\nlaghialdo@gmail.com\nFB: @Aldo Laghi\nwww.borgodeilaghi.com",
+    "Tipi di pagamento accettati": "Contanti",
+    "Ambito territoriale di consegna": "Faenza",
+    "Altre informazioni": "Prodotti:\n- pasta di grani antichi\n- farina di grani antichi (senatore Cappelli, gentil rosso, verna, ardito, farro)\n- olio\n- vini sfusi e in bottiglia\n- carciofo moretto\n- frutta di stagione e noci.",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Azienda Agricola Bosi Gherardo - La campagna in tavola\nFrutta e verdura di stagione, mandorle e fragole",
+    "Contatti: telefono/email": "338 6001163 (Davide)\n388 1182401 (Annalisa)",
+    "Tipi di pagamento accettati": "Contanti",
+    "Ambito territoriale di consegna": "Faenza, Ravenna e dintorni",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Azienda agricola Cà ad Là\nSalumi e carne di mora, olio",
+    "Contatti: telefono/email": "370 3276130\n348 2221364",
+    "Tipi di pagamento accettati": "",
+    "Ambito territoriale di consegna": "Brisighella, Faenza",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Azienda agr. Carlo Avanzolini\nMiele Pieve Regina",
+    "Contatti: telefono/email": "347 8738168",
+    "Tipi di pagamento accettati": "",
+    "Ambito territoriale di consegna": "Faenza",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Azienda agr. Castelluccio\nVitivinicola",
+    "Contatti: telefono/email": "0546 942486\n348 7766171\ninfo@ronchidicastelluccio.it",
+    "Tipi di pagamento accettati": "Contanti\nBonifico",
+    "Ambito territoriale di consegna": "Faenza e comuni limitrofi",
+    "Altre informazioni": "Produzione propria di vino: Sangiovese, Sauvignon blanc",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Azienda Agr. Dott. Marabini Giuseppe Azienda vinicola",
+    "Contatti: telefono/email": "338 2076191",
+    "Tipi di pagamento accettati": "Contanti alla consegna\nBonifico bancario",
+    "Ambito territoriale di consegna": "Faenza, Castel Bolognese, Solarolo e zone limitrofe",
+    "Altre informazioni": "Vendita vini in bottiglia e bag in box 5lt.\nConsegna minimo 18 bottiglie, anche miste.",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Azienda agricola LA SIESTA\nVino e spumante in bottiglia",
+    "Contatti: telefono/email": "347 0497064\nag.lasiesta@gmail.com",
+    "Tipi di pagamento accettati": "Contanti",
+    "Ambito territoriale di consegna": "Faenza e comuni limitrofi",
+    "Altre informazioni": "Ordine minimo 12 bottiglie.\nConsegna a domicilio di: - Pignoletto frizzante  DOC “Re lieto” - Famoso fermo IGT “Dazio” - Spumante metodo classico DOC “E trèbb”.",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Azienda agr. La Valle delle Albicocche - Bagnacavallo\nFrutta, verdura, piadine, prodotti confezionati del territorio, prodotti confezionati commercio equo e solidale",
+    "Contatti: telefono/email": "335 375457\ninfo@lavalledellealbicocche.it\nwww.lavalledellealbicocche.it\nFB: @La-valle-delle-albicocche",
+    "Tipi di pagamento accettati": "Alla consegna o con Carta di credito direttamente sul sito",
+    "Ambito territoriale di consegna": "Circondario di Imola, Faenza, Bassa Romagna e Ravenna",
+    "Altre informazioni": "Prodotti biologici.\nConsegna a domicilio con due ordini alla settimana: entro sabato (consegna lunedì e martedì) ed entro martedì (consegna giovedì e venerdì).\nVendita online sul sito: www.lavalledellealbicocche.it",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Azienda Agr. Casacce di Luca Roncassaglia - Zattaglia\nSalumi di Mora Romagnola",
+    "Contatti: telefono/email": "3394039008\nazagrcasacce@libero.it",
+    "Tipi di pagamento accettati": "POS\nContanti",
+    "Ambito territoriale di consegna": "Faenza, Brisighella, Riolo Terme, Imola, Forlì",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Azienda Agricola Mamini\nFrutta, Verdura, Fiori recisi",
+    "Contatti: telefono/email": "335 428460",
+    "Tipi di pagamento accettati": "",
+    "Ambito territoriale di consegna": "Fenza",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Az Agr Mordini Giancarlo e Stefano\nVino in bottiglia, Olio, Frutta di stagione",
+    "Contatti: telefono/email": "338 4599715 (Paola)\nAz.agricolamordini@libero.it",
+    "Tipi di pagamento accettati": "Solo contanti",
+    "Ambito territoriale di consegna": "Faenza e comuni limitrofi",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Az. Agricola Neri Silvano \"I Frutti di Stagione\"\nFrutta e verdura.",
+    "Contatti: telefono/email": "339 7990052\n338 5472307\naziendaagricolaneri@gmail.com",
+    "Tipi di pagamento accettati": "Contanti\nSatispay",
+    "Ambito territoriale di consegna": "Faenza, Brisighella, Castel Bolognese e Comuni limitrofi",
+    "Altre informazioni": "Consegne: tutti i giorni della settimana.\nDa metà aprile... Carciofo Moretto, Fave, Piselli, Porri, Aglio fresco, Fragole, Ciliegie (primi giorni di maggio), Confetture, Carciofi sott'olio e trito di  Carciofo Moretto",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Az. Agr. Orto Cantone di Ghetti\nColtivazione e vendita frutta e verdura di produzione propria",
+    "Contatti: telefono/email": "3402527164\n3666508244\n(per ordini whatsapp)",
+    "Tipi di pagamento accettati": "Contanti\nSatispay",
+    "Ambito territoriale di consegna": "Faenza e comuni limitrofi",
+    "Altre informazioni": "Consegna gratuita.\nSenza minimo di ordine.",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Azienda agricola Pioletto - La campagna in tavola\nVini, confetture e saba",
+    "Contatti: telefono/email": "339 4046805 (Eliseo)",
+    "Tipi di pagamento accettati": "Contanti",
+    "Ambito territoriale di consegna": "Faenza e dintorni",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Azienda agr. RADISA di Mingozzi Eugenio\nProduttore ortofrutticolo",
+    "Contatti: telefono/email": "338 3829583",
+    "Tipi di pagamento accettati": "Contanti",
+    "Ambito territoriale di consegna": "Faenza",
+    "Altre informazioni": "Prodotti: verdura e frautta di stagione.\nOrdine minimo 25euro.",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Azienda Agricola Ricciardelli\nUova",
+    "Contatti: telefono/email": "388 8164177",
+    "Tipi di pagamento accettati": "",
+    "Ambito territoriale di consegna": "Faenza, Riolo Terme, Bologna",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Az agr. Trerè s.s soc agr.\nVino in bottiglie",
+    "Contatti: telefono/email": "054647034\n3482685356\n3488089108",
+    "Tipi di pagamento accettati": "Contanti alla consegna\nSatispay\nPagamento anticipato con Carta credito o Bonifico",
+    "Ambito territoriale di consegna": "Faenza trasporto gratuito con 12 bottiglie o 80 €\nFuori comune min 18 bottiglie.",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Az. Biologica PEDROSOLA\nMiele e prodotti dell'alveare, Vino, Confetture",
+    "Contatti: telefono/email": "329 2661084\n0546 86195\naz.pedrosola@gmail.com",
+    "Tipi di pagamento accettati": "Contanti\nSatispay\nPOS\nBonifico anticipato",
+    "Ambito territoriale di consegna": "Faenza, Brisighella e zone limitrofe",
+    "Altre informazioni": "Prodotti biologici.\nFaenza e Brisighella: ordine minimo 10€\nZone limitrofe: ordine minimo 15€",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Babini Fabio\nVerdure e frutta  di stagione, frutta secca",
+    "Contatti: telefono/email": "333 7506181 (Fabio)",
+    "Tipi di pagamento accettati": "Bancomat\nSatispay",
+    "Ambito territoriale di consegna": "Faenza e comuni limitrofi",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Balìa di Zola di Eluci Veruska - Modigliana\nVino in bottiglia",
+    "Contatti: telefono/email": "0546 940577\n348 7766171\n348 7939370\n3317581580\ninfo@baliadizola.com",
+    "Tipi di pagamento accettati": "Contanti\nPaypal\nSatispay",
+    "Ambito territoriale di consegna": "Faenza e comuni limitrofi",
+    "Altre informazioni": "Produzione propria di vino in bottiglia:\n1)  Romagna DOC Sangiovese Superiore\n2)  Romagna DOC Sangiovese Modigliana Riserva\n3)  Romagna DOCG Albana secco",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Bartolini Alvaro - La campagna in tavola\nMiele, peperoncino e piantine",
+    "Contatti: telefono/email": "333 5303686",
+    "Tipi di pagamento accettati": "Contanti",
+    "Ambito territoriale di consegna": "Faenza e dintorni",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Benedetti Daniele\nVino sfuso ed in bottiglia.",
+    "Contatti: telefono/email": "338 6131450\ndan.benedetti@alice.it",
+    "Tipi di pagamento accettati": "Carte di credito\nBonifico bancario anticipato\nContanti",
+    "Ambito territoriale di consegna": "Faenza e comuni limitrofi",
+    "Altre informazioni": "Pignoletto DOC frizzante, Trebbiano IG frizzante, Sangiovese IG",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Birrificio agricolo La Mata - Solarolo",
+    "Contatti: telefono/email": "320 8778007 (anche Whatsapp)\nInfo@birrificiolamata.it\nwww.birrificiolamata.it/",
+    "Tipi di pagamento accettati": "",
+    "Ambito territoriale di consegna": "Faenza e zone limitrofe (Imola, Forlì, Lugo, ecc.)",
+    "Altre informazioni": "Consegne il venerdì.\nPer info: birrificiolamata.it/2020/03/16/consegnamo-a-domicilio",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Bottega di Casa Novella\nAlimentari, Pasta fresca, formaggi, pane di Palazzuolo, salumi locali, birre, biscotti",
+    "Contatti: telefono/email": "054670195\nbottegadicasanovella@gmail.com\nFB @bottegadicasanovella",
+    "Tipi di pagamento accettati": "POS\nContanti",
+    "Ambito territoriale di consegna": "Faenza, Castel Bolognese, Riolo Terme",
+    "Altre informazioni": "Listino prodotti principali presente sulla pagina FB.\nConsegne dal martedì al sabato.\nOrari di apertura 8-12:30.",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "CAB - Terra di Brisighella\nOlio, vini, pasta",
+    "Contatti: telefono/email": "347 6904960\n(anche whatsapp)",
+    "Tipi di pagamento accettati": "",
+    "Ambito territoriale di consegna": "Brisighella, Faenza e intera Provincia di Ravenna",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Cantina Casadio\nProduzione e vendita diretta vini e olio",
+    "Contatti: telefono/email": "339 1346763\na.casadio@hotmail.it\nFB: @cantinacasadio\ncantinacasadio.it",
+    "Tipi di pagamento accettati": "Contanti\nSatispay",
+    "Ambito territoriale di consegna": "Faenza e comuni limitrofi, Brisighella, Forlì, Imola, Ravenna, Bassa Romagna",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Cantina San Biagio Vecchio",
+    "Contatti: telefono/email": "349 0553598 (Lucia Ziniti)\n339 35223168 (Andrea Balducci)\ncantinasanbiagiovecchio@gmail.com\nwww.cantinasanbiagiovecchio.com",
+    "Tipi di pagamento accettati": "POS\nSatispay\nBonifico anticipato\nContanti",
+    "Ambito territoriale di consegna": "Faenza e comuni limitrofi",
+    "Altre informazioni": "Vino in bottiglia, farina grano tenero Gentil Rosso.",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Casa Merlo - La campagna in tavola\nFrutta e verdura, confetture, farine, passata di pomodoro e olio",
+    "Contatti: telefono/email": "347 3108877 (Carla)",
+    "Tipi di pagamento accettati": "Contanti",
+    "Ambito territoriale di consegna": "Faenza e dintorni",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Caviroteca\nVendita vini selezionati imbottigliati",
+    "Contatti: telefono/email": "0546 629335\nfaenza@caviroteca.it",
+    "Tipi di pagamento accettati": "Contanti",
+    "Ambito territoriale di consegna": "Faenza",
+    "Altre informazioni": "Consegna a domicilio mercoledì e venerdì pomeriggio dalle 15 alle 18:30.\nOrdine minimo 12 bottiglie.",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "COFRA s.c. in collaborazione con il Nucleo Volontariato e PC ANC Faenza ODV\nSupermercato",
+    "Contatti: telefono/email": "amministrazione@gruppocofra.it 339 7623171 (Frega Luciano)\npetramordini@gruppocofra.it 334 6876722 (Petra Mordini, commerciale Cofra)\nNucleo volontariato ANC 348 8998472 (Ivan Savorani, Responsabile Associazione) savorani@livellodue.it",
+    "Tipi di pagamento accettati": "Contanti\nPOS\nConad card",
+    "Ambito territoriale di consegna": "Comprensorio faentino",
+    "Altre informazioni": "Il servizio è rivolto solo a chi ha serie difficoltà a recarsi a fare la spesa.\nOrdine telefonico all'associazione di volontariato ANC al 348 8998472  dalle 8:30 alle 10:45, consegna nel pomeriggio.",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Collina Eliseo\nViticoltore",
+    "Contatti: telefono/email": "339 4046805",
+    "Tipi di pagamento accettati": "Contanti\nAssegno",
+    "Ambito territoriale di consegna": "Faenza e comuni limitrofi",
+    "Altre informazioni": "Prodotti: vino e prodotti trasformati (marmellate)",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Collina Soc. Agr. Brisighella\nProduzione vino con uve proprie",
+    "Contatti: telefono/email": "334 3423537\nciao@poderelacollina.com\nwww.poderelacollina.com",
+    "Tipi di pagamento accettati": "Contanti\nBonifico",
+    "Ambito territoriale di consegna": "Faenza, Brisighella",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "FARM di Misirocchi Lara\nProduzione pane, biscotti, confetture e marmellate",
+    "Contatti: telefono/email": "333 1443090\nmisirocchilara@gmail.com\nFB: @FarMincolours INST: @FarMincolours",
+    "Tipi di pagamento accettati": "Satispay\nContanti (contati)",
+    "Ambito territoriale di consegna": "Faenza",
+    "Altre informazioni": "Prodotti diversi ogni settimana.\nSi può ricevere la newsletter tramite whtsapp facendone richiesta al 3331443090",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Fattoria Zerbina srl\nVendita vino in bottiglia",
+    "Contatti: telefono/email": "320 6657368 (anche Whatsapp)\nsviluppo@zerbina.com",
+    "Tipi di pagamento accettati": "Contanti\nPOS\nCarte di Credito\nBonifico bancario",
+    "Ambito territoriale di consegna": "Faenza, Ravenna e provincia, Forlì, Imola",
+    "Altre informazioni": "Consegna gratuita a Faenza e dintorni.\nPer le altre zone minimo d'ordine 6 bottiblie, anche miste.\nConsegna dal martedì al sabato mattina.\nSconto del 10% per acquisti superiori a 100,00€",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Gallegati Società Agricola\nProduzione Vino",
+    "Contatti: telefono/email": "348 8700715\n339 8455419\ninfo@aziendaagricolagallegati.it",
+    "Tipi di pagamento accettati": "Contanti\nSatispay",
+    "Ambito territoriale di consegna": "Faenza e comuni limitrofi",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "La Cinquina az.agr.\nOrtofrutta, legumi, trasformati, marmellate, olio, succhi",
+    "Contatti: telefono/email": "349 2546858",
+    "Tipi di pagamento accettati": "",
+    "Ambito territoriale di consegna": "Faenza",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "La Contadina di Romagna Società Agricola\nOrtaggi e frutta di stagione, Frutta secca, Confetture, Succhi",
+    "Contatti: telefono/email": "347 3588155 (anche WhatsApp)\nlacontadinadiromagna01@gmail.com",
+    "Tipi di pagamento accettati": "Carte di Credito\nSatispay\nContanti",
+    "Ambito territoriale di consegna": "Faenza e comuni limitrofi",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "LA MAGERIA\nAlimentari, gastronomia",
+    "Contatti: telefono/email": "0546 662437\n339 7054045",
+    "Tipi di pagamento accettati": "Contanti\nSatispay",
+    "Ambito territoriale di consegna": "Faenza città",
+    "Altre informazioni": "A partire dal 6 aprile.\nOrdine telefonico dalle 9 alle 12. Consegna pomeriggio dopo le 16:30.\nEscluso i festivi.",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "LA SABBIONA Soc. Agr.\nProduzione e vendita vini in bottiglia e bag in box. Pasta e farina di farro, olio extravergine di oliva",
+    "Contatti: telefono/email": "0546 642142\n335 8343313\ninfo@lasabbiona.it\nwww.lasabbiona.it",
+    "Tipi di pagamento accettati": "Contanti alla consegna\nBancomat\nBonifico anticipato",
+    "Ambito territoriale di consegna": "Faenza e comuni limitrofi",
+    "Altre informazioni": "Consegne a domicilio minimo 6 pezzi (bottiglie o bag in box).\nTrasporto gratuito.",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Leone Conti Società Argicola\nProduzione di vino, olio e farina",
+    "Contatti: telefono/email": "335 7175022\namministrazione@leoneconti.it",
+    "Tipi di pagamento accettati": "Contanti\nSatispay\nPOS",
+    "Ambito territoriale di consegna": "Faenza e comuni limitrofi",
+    "Altre informazioni": "Consegna dell'arco del giorno successivo all'ordine.",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Malavolti Stefania\nFormaggi freschi e stagionati ricotta yogurt",
+    "Contatti: telefono/email": "339 2172282 (Stefania)\n328 733 4121 (Sara)",
+    "Tipi di pagamento accettati": "Solo contanti",
+    "Ambito territoriale di consegna": "Faenza e comuni limitrofi",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Mora del Munio\nSalumi e salati di Mora del Munio",
+    "Contatti: telefono/email": "335 5380545 (Leonardo)",
+    "Tipi di pagamento accettati": "Solo contanti",
+    "Ambito territoriale di consegna": "Faenza e comuni limitrofi",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Officina del pesce\nPescheria",
+    "Contatti: telefono/email": "0546 1914846\n339 1802677",
+    "Tipi di pagamento accettati": "Contanti\nSatispay",
+    "Ambito territoriale di consegna": "Faenza",
+    "Altre informazioni": "Si può ordinare dalle 7 alle 10.\nMinimo d'ordine: 30 euro.\nConsegna gratuita.",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Pastificio Artigianale Daniele Lusa\nProduzione di Pasta Fresca e vendita di prodotti alimentari locali",
+    "Contatti: telefono/email": "338 8027201",
+    "Tipi di pagamento accettati": "Contanti",
+    "Ambito territoriale di consegna": "Faenza e dintorni",
+    "Altre informazioni": "Cappelletti, Tortelloni, Tagliatelle, Passatelli, zuppa imperiale. PASTA MANCINI e Vini del Territorio.",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Pelliconi Luigi e Grementieri Stefania “Il Gualdo di sotto”\nVino sfuso e bag in box, vino in bottiglia, liquori, marmellate e Frutta di stagione",
+    "Contatti: telefono/email": "333 4949036 (Mascia)\ninfo@agriturismoilgualdodisotto.com",
+    "Tipi di pagamento accettati": "Carte di credito\nBonifico bancario anticipato\nContanti",
+    "Ambito territoriale di consegna": "Faenza e comuni limitrofi",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Pescheria Carli AGM\nVendita prodotti ittici",
+    "Contatti: telefono/email": "347 9950953 (Gianluca)\n345 2380309 (Marcello)",
+    "Tipi di pagamento accettati": "Contanti",
+    "Ambito territoriale di consegna": "Faenza e comuni limitrofi",
+    "Altre informazioni": "Consegna a domicilio dal lunedì al venerdì.",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Podere LA BERTA\nVino e birra artigianale in bottiglia",
+    "Contatti: telefono/email": "347 043 8568\nplb@poderelaberta.com",
+    "Tipi di pagamento accettati": "POS\nContanti",
+    "Ambito territoriale di consegna": "Faenza e intera Provincia di Ravenna",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Podere Panigheto\nAzienda agricola",
+    "Contatti: telefono/email": "340 5946729 (Anna) Whatsapp\npoderepanigheto@yahoo.com",
+    "Tipi di pagamento accettati": "Contanti\nBonifico",
+    "Ambito territoriale di consegna": "Faenza e comuni limitrofi",
+    "Altre informazioni": "Verdura e frutta di stagione biologica.\nConsegna lunedì dalle 14:30.",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Poderi Morini Soc. agr. srl\nProduzione vino in bottiglia",
+    "Contatti: telefono/email": "392 3899626\n0546 638172\ninfo@poderimorini.it",
+    "Tipi di pagamento accettati": "Contanti\nSatispay",
+    "Ambito territoriale di consegna": "Faenza e Romagna",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Rio del Sol Soc.Agr.\nSucchi, frutta, confetture, vini",
+    "Contatti: telefono/email": "WhatsApp al\n339 8088302",
+    "Tipi di pagamento accettati": "",
+    "Ambito territoriale di consegna": "Faenza e Provincia di Ravenna",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Sangiorgi Riccardo\nProduttore orticolo",
+    "Contatti: telefono/email": "345 0244082\ncleo5@hotmail.com",
+    "Tipi di pagamento accettati": "Contanti\nSatispay",
+    "Ambito territoriale di consegna": "Faenza e comuni limitrofi",
+    "Altre informazioni": "Prodotti: verdura stagionale.",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Società Agr. Monti di Monti Pierluigi e C.\nProduttore orticolo",
+    "Contatti: telefono/email": "328 3040705\nsvetlanavolcova583@gmail.com\nFB: @La Baracchina di Monti",
+    "Tipi di pagamento accettati": "Solo contanti",
+    "Ambito territoriale di consegna": "Faenza e comuni limitrofi",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "SPINETTA Azienda Agricola - Santa Lucia\nProduzione e vendita vini sfusi e in bottiglia",
+    "Contatti: telefono/email": "340 5363293\ninfo@spinetta.it\nwww.spinetta.it\nÈ gradita chiamata al telefono per meglio informare l'utente delle varie possibilità di scelta tra i vari tipi di vini.",
+    "Tipi di pagamento accettati": "POS\nSatispay\nBonifico\nContanti",
+    "Ambito territoriale di consegna": "Territorio romagnolo",
+    "Altre informazioni": "Consegna anche a domicilio di vini sfusi  (in contenitori da 1, 3, 5 litri o damigiane) e in bottiglia (etichettati – si veda www.spinetta.it ).\nConsegna in 24 ore.",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Torre del Marino di Cortecchia Piero\nVino, olio e confetture",
+    "Contatti: telefono/email": "349 0590830\n(anche whatsapp)",
+    "Tipi di pagamento accettati": "Bonifico bancario anticipato\nSatispay\nContanti",
+    "Ambito territoriale di consegna": "Faenza, Brisighella, Castel Bolognese, Riolo Terme",
+    "Altre informazioni": "Vino in bottiglie e in bag in box, olio e confetture di nostra produzione.\nOrdine minimo 30€.",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Torrefazione Caffè Gourmet\nCaffè in grani, in cialde, in capsule compatibili. Uova di Pasqua e colombe. Infusi e Tè.",
+    "Contatti: telefono/email": "0542 640621\n339 7888281\nordini@torrefazionegourmet.it\ntorrefazionegourmet.it",
+    "Tipi di pagamento accettati": "Contanti\nSatispay\nCarta di credito\nBancomat",
+    "Ambito territoriale di consegna": "Faenza, Castelbolognese, Riolo Terme, Brisighella, Argenta, Imola, Comuni della Vallata del Santerno, Bologna, Ravenna e tutti i comuni della Bassa Romagna",
+    "Altre informazioni": "Senza minimi d'ordine.",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Zinzani Marco\nVino imbottigliato e sfuso",
+    "Contatti: telefono/email": "348 7932617\nzinzanivini@gmail.com",
+    "Tipi di pagamento accettati": "Solo Contanti",
+    "Ambito territoriale di consegna": "Faenza, Bagnacavallo",
+    "Altre informazioni": "",
+    "": "",
+    "__1": ""
+  },
+  {
+    "Nome attività": "Zoli Paolo\nProduzione e vendita vino",
+    "Contatti: telefono/email": "329 1610052\npaolo.zoli69@gmail.com",
+    "Tipi di pagamento accettati": "Contanti",
+    "Ambito territoriale di consegna": "Faenza e dintorni",
+    "Altre informazioni": "Consegna a domicilio di vino sfuso o confezionato.",
+    "": "",
+    "__1": ""
+  }
+]'
